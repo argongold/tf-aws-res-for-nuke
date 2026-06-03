@@ -34,7 +34,7 @@ module "security_group" {
   source   = "./modules/aws-security-groups"
   for_each = toset([for i in range(1, 11) : tostring(i)])
   name     = "${var.sg_name}-${each.value}"
-  vpc_id   = data.aws_vpc.default.id
+  vpc_id   = aws_vpc.this.id
 }
 
 module "cloudwatch_log_group" {
