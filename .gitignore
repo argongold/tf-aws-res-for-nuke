@@ -99,7 +99,6 @@ lambda.zip
 .terraform
 terraform.tfstate
 terraform.tfstate.backup
-*.tfvars
 
 ### Terraform Patch ###
 # End of https://www.gitignore.io/api/terraform
