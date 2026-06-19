@@ -1,4 +1,5 @@
 aws_region           = "eu-west-1"
+resource_count       = 10
 lambda_function_name = "nuke-test-lambda"
 s3_bucket_name       = "nuke-test-bucket"
 ssm_parameter_name   = "nuke-test-ssm-parameter"

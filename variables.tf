@@ -8,6 +8,12 @@ variable "aws_region" {
   type        = string
 }
 
+variable "resource_count" {
+  description = "number of each resource type to create"
+  type        = number
+  default     = 10
+}
+
 variable "lambda_function_name" {
   description = "base name for lambda functions"
   type        = string
