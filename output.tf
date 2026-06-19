@@ -1,3 +1,7 @@
+output "deployment_suffix" {
+  value = random_id.this.hex
+}
+
 output "lambda_function_names" {
   value = [for k, v in module.lambda : v.function_arn]
 }
